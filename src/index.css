@@ -7,11 +7,15 @@
     --light-beige: #fefae0;
     --light-green: #e9edc9;
     --semi-light-green: #ccd5ae;
+    --black: #000;
+    --white: #fff;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     font-family: var(--font-base);
 }
 
