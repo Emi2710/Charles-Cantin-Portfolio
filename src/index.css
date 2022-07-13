@@ -19,6 +19,10 @@
     font-family: var(--font-base);
 }
 
+.title {
+    font-family: var(--font-title);
+}
+
 
 @media screen and (min-width: 320px ) {
     .app{

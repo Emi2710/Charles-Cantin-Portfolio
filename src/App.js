@@ -17,6 +17,7 @@ const App = () => {
   return (
       
         <div className='app'>
+            
             <Navbar />
             {showPage()}  
             <Footer />

@@ -17,7 +17,8 @@ const Navbar = () => {
               <li className="app__flex p-text"><a href='gallerie'>Gallerie</a></li>
               <li className="app__flex p-text"><a href='tarifs'>Tarifs</a></li>
           </ul>
-          <button>Contactez-moi</button>
+          <button><a href='contact'>Contactez-moi</a></button>
+          
 
           <div className='app__navbar-menu'>
               <HiMenuAlt4 onClick={() => setToggle(true)} className='hamburger' />
@@ -28,6 +29,7 @@ const Navbar = () => {
             transition={{duration: 0.85, ease: 'easeOut'}}
             >
               <HiX onClick={() => setToggle(false)} />
+              
               <ul className='app__navbar-toggle'>
                   <li><a href='accueil'>Accueil</a></li>
                   <li><a href='gallerie'>Gallerie</a></li>
