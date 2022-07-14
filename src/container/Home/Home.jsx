@@ -4,7 +4,6 @@ import './Home.scss';
 import { urlFor, client } from '../../client';
 
 
-
 const Home = () => {
 
   const [home, setHome] = useState([]);
@@ -34,4 +33,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

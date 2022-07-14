@@ -19,6 +19,10 @@
     font-family: var(--font-base);
 }
 
+.app {
+    background-color: var(--black);
+}
+
 .title {
     font-family: var(--font-title);
 }

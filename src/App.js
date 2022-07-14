@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Navbar } from './components';
 import { Home, Gallery, Price, Footer } from './container';
 
 const App = () => {
+
+  useEffect(() => {
+      document.body.style.backgroundColor = '#000';
+  }, []);  
 
   const showPage = () => {
         if (window.location.pathname === "/" || window.location.pathname === "/accueil"  ) {
