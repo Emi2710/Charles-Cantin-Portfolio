@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import {Link} from 'react-router-dom';
 
 import './Navbar.scss';
 
@@ -13,9 +14,11 @@ const Navbar = () => {
       <nav className='app__navbar'>
           
           <ul className='app__navbar-links'>
-              <li className="app__flex p-text"><a href='accueil'>Accueil</a></li>
-              <li className="app__flex p-text"><a href='gallerie'>Gallerie</a></li>
-              <li className="app__flex p-text"><a href='tarifs'>Tarifs</a></li>
+
+            <Link to='/'><li className='app__flex p-text'>Accueil</li></Link>
+            <Link to='gallerie'><li className='app__flex p-text'>Gallerie</li></Link>
+            <Link to='tarifs'><li className='app__flex p-text'>Tarifs</li></Link>
+              
           </ul>
           <button><a href='contact'>Contactez-moi</a></button>
           
@@ -31,9 +34,10 @@ const Navbar = () => {
               <HiX onClick={() => setToggle(false)} />
               
               <ul className='app__navbar-toggle'>
-                  <li><a href='accueil'>Accueil</a></li>
-                  <li><a href='gallerie'>Gallerie</a></li>
-                  <li><a href='tarifs'>Tarifs</a></li>
+
+                <Link to='/'><li onClick={() => setToggle(false)}>Accueil</li></Link>
+                <Link to='gallerie'><li onClick={() => setToggle(false)}>Gallerie</li></Link>
+                <Link to='tarifs'><li onClick={() => setToggle(false)}>Tarifs</li></Link>
               </ul>
             </motion.div>
           )}

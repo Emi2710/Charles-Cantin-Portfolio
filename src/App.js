@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Navbar } from './components';
-import { Home, Gallery, Price, Footer } from './container';
+import {Home, Gallery, Price} from './container'
 
 const App = () => {
 
@@ -9,24 +9,22 @@ const App = () => {
       document.body.style.backgroundColor = '#000';
   }, []);  
 
-  const showPage = () => {
-        if (window.location.pathname === "/" || window.location.pathname === "/accueil"  ) {
-            return <Home />
-        } else if (window.location.pathname === "/gallerie") {
-            return <Gallery />
-        } else if (window.location.pathname === "/tarifs") {
-            return <Price />
-        }    
-    }
+   
+    
   return (
-      
+      <BrowserRouter>
         <div className='app'>
-            
-            <Navbar />
-            {showPage()}  
-            <Footer />
+              
+              <Navbar />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/gallerie" element={<Gallery />} />
+                <Route path="/tarifs" element={<Price />} />  
+              </Routes>
 
-        </div>    
+          </div>
+      </BrowserRouter>
+            
   );
 }
 

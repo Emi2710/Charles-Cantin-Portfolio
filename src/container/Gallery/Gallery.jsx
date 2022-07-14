@@ -5,19 +5,6 @@ import './Gallery.scss';
 
 const Gallery = () => {
 
-  const scrollRef = React.useRef(null);
-
-  const scroll = (direction) => {
-    const { current } = scrollRef;
-
-    if (direction === 'left') {
-      current.scrollLeft -= 300;
-    } else {
-      current.scrollLeft += 300;
-  };
-
-  }
-
   const [activeFilter, setActiveFilter] = useState('All');
   const [gallery, setGallery] = useState([]);
   const [filterGallery, setFilterGallery] = useState([]);
@@ -50,7 +37,6 @@ const Gallery = () => {
               key={index}
               onClick={() => handleFilter(item)}
               className={`app__gallery-filter-item ${activeFilter === item ? 'item-active' : ''}`}
-              ref={scrollRef}
             >
               {item}
             </div>
