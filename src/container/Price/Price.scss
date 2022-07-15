@@ -1,0 +1,40 @@
+.app__price-flex {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    .app__price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+        margin: 2rem;
+        padding: 3rem;
+        border-radius: 25px;
+    }
+
+    p {
+        text-align: center;
+        padding: 1rem 0 2rem 0;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .app__price-container {
+        width:40vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .app__price-container {
+        width: 80vw;
+        max-width: 600px;
+        max-height: 450px;
+        
+    }
+}
