@@ -7,7 +7,7 @@ const Contact = () => {
 
     const [state, handleSubmit] = useForm("xlezqedg");
     if (state.succeeded) {
-        return <p style={{color: '#fff'}}>Thanks for joining!</p>;
+        return <h1 style={{color: '#fff', display:'flex', justifyContent:'center', alignItems:'center'}}>Merci pour votre message!</h1>;
     }
 
   return (

@@ -14,16 +14,19 @@
             font-family: 'Cormorant Upright', sans-serif;
             font-weight: 600;
             letter-spacing: 1px;
+            color: #fefae0;
         }
 
         button {
             padding: 1rem;
             border-radius: 12px;
             transition-duration: 0.5s;
+            border: none;
+            background-color: var(--light-green);
 
             &:hover {
                 cursor: pointer;
-                background-color: #aaa;
+                background-color: rgb(224, 207, 207);
             }
         }
     }
@@ -32,12 +35,17 @@
         background: none;
     }
 
+    ::placeholder {
+        color: #fefae0;
+    }
+
     textarea, form input {
         background: none;
         border: 1px solid #fff;
+        border-radius: 12px;
         margin: 1rem 0;
         padding: 0.7rem;
-        color: #aaa;
+        color: #fefae0;
     }
 
     textarea {

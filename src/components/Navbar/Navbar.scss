@@ -131,14 +131,14 @@
     background: none;
     padding: 0.3rem 1rem;
     border-radius: 25px;
-    border: 2px solid #fff;
+    border: 2px solid var(--light-beige);
     cursor: pointer;
     z-index: 5;
     
     transition-duration: 1s;
 
     &:hover {
-        background: var(--white);
+        background: var(--light-beige);
 
         a {
            color: var(--black); 
@@ -147,7 +147,7 @@
     }
 
     a {
-        color: #fff;
+        color: var(--light-beige);
         text-decoration: none;
     }
 }

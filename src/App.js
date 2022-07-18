@@ -6,11 +6,10 @@ import {Home, Gallery, Price, Contact} from './container'
 const App = () => {
 
   useEffect(() => {
-      document.body.style.backgroundColor = '#000';
+      document.body.style.backgroundColor = '#ccd5ae';
   }, []);  
 
    
-    
   return (
       <BrowserRouter>
         <div className='app'>
