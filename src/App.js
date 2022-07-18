@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Navbar } from './components';
-import {Home, Gallery, Price} from './container'
+import {Home, Gallery, Price, Contact} from './container'
 
 const App = () => {
 
@@ -19,8 +19,10 @@ const App = () => {
               <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/gallerie" element={<Gallery />} />
-                <Route path="/tarifs" element={<Price />} />  
+                <Route path="/tarifs" element={<Price />} /> 
+                <Route path="/contact" element={<Contact />} />
               </Routes>
+
 
           </div>
       </BrowserRouter>

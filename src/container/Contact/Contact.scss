@@ -1,0 +1,65 @@
+.contact__form-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        height: 100%;
+
+        &::placeholder {
+            font-family: 'Cormorant Upright', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        button {
+            padding: 1rem;
+            border-radius: 12px;
+            transition-duration: 0.5s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #aaa;
+            }
+        }
+    }
+
+    &:active {
+        background: none;
+    }
+
+    textarea, form input {
+        background: none;
+        border: 1px solid #fff;
+        margin: 1rem 0;
+        padding: 0.7rem;
+        color: #aaa;
+    }
+
+    textarea {
+        height: 125px;
+
+        &:active {
+            background:none;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 520px) {
+    .contact__form-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        form {
+            width: 80vw;
+        }
+    }
+
+}

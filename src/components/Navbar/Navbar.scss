@@ -166,9 +166,29 @@
 }
 
 
-.app__navbar-links{
-    
+.app__social{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 25px;
+    z-index: 100;
 
+    div {
+        margin: 1rem;
+        
+
+        a {
+            color: #fff;
+            transition-duration: 0.5s;
+            
+            &:hover {
+                cursor: pointer;
+                color: #aaa;
+            }
+        }
+
+        
+    }
 }
 
 

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import {Link} from 'react-router-dom';
+import { BsTwitter, BsInstagram } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
 
 import './Navbar.scss';
 
@@ -20,7 +22,7 @@ const Navbar = () => {
             <Link to='tarifs'><li className='app__flex p-text'>Tarifs</li></Link>
               
           </ul>
-          <button><a href='contact'>Contactez-moi</a></button>
+          <button><Link to='/contact'>Contactez-moi</Link></button>
           
 
           <div className='app__navbar-menu'>
@@ -44,6 +46,21 @@ const Navbar = () => {
           </div>
   
       </nav>  
+
+      <div className="app__social">
+            <div>
+              <a href="https://twitter.com"><BsTwitter /></a>
+            </div>
+
+            <div>
+              <a href="https://facebook.com"><FaFacebookF /></a>
+            </div>
+
+            <div>
+              <a href="https://instagram.com"><BsInstagram /></a>
+            </div>
+        </div>
+     
 
       
 
