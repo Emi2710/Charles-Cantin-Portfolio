@@ -8,8 +8,6 @@ Vous trouverez également le lien vers le site déployé en ligne .
 
 Ci dessous les démarches de déploiment en local.
 
-Pour avoir plus d'informations sur l'accès au CMS, se rendre dans le fichier 'backend_sanity'
-
 ## Variables
 
 Pour déployer l'application, vous aurez besoin de rajouter ces clés d'API dans votre fichier .env
@@ -46,6 +44,20 @@ Démarrer
 
 ```bash
     npm start
+```
+
+## Déployer le CMS Sanity Studio
+
+Accéder au fichier
+
+```bash
+    cd backend_sanity
+```
+
+Démarrer
+
+```bash
+    sanity start
 ```
 
 ## Auteur
