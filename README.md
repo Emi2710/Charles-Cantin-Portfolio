@@ -8,30 +8,12 @@ Vous trouverez également le lien vers le site déployé en ligne .
 
 Ci dessous les démarches de déploiment en local.
 
-## Variables
-
-Pour déployer l'application, vous aurez besoin de rajouter ces clés d'API dans votre fichier .env
-
-```bash
-    REACT_APP_SANITY_PROJECT_ID
-```
-
-```bash
-    REACT_APP_SANITY_TOKEN
-```
-
 ## Déployer l'application localement
 
 Cloner le projet
 
 ```bash
-    https://github.com/Emi2710/Charles-Cantin-Portfolio
-```
-
-Aller dans le répertoire du projet
-
-```bash
-    cd frontend_react
+    git clone https://github.com/Emi2710/Charles-Cantin-Portfolio
 ```
 
 Installer les dépendances
@@ -59,6 +41,12 @@ Démarrer
 ```bash
     sanity start
 ```
+
+puis s'authentifier
+
+### autre manière d'accéder à sanity studio
+
+suivre [ce lien](https://charles-cantin.sanity.studio/) et s'authentifier
 
 ## Auteur
 
