@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# Evaluation d'entraînement front end en cours de formation, portfolio pour Charles Cantin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été réalisé dans le cadre de l'évaluation d'entraînement en cours de formation : développer une application front end.
 
-## Available Scripts
+Le but était de développer un site portfolio pour le photographe Charles Cantin avec toutes les fonctionalités demandées. Vous pourrez retrouver dans le repo les fichiers contenant les wireframes et les mockups ainsi que la charte graphique.
+
+Vous trouverez également le lien vers le site déployé en ligne .
+
+Ci dessous les démarches de déploiment en local.
+
+## Déployer l'application localement
+
+Cloner le projet
+
+```bash
+    https://github.com/Emi2710/Charles-Cantin-Portfolio
+```
 
 In the project directory, you can run:
 
