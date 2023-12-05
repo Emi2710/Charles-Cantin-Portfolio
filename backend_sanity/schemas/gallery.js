@@ -1,6 +1,6 @@
 export default {
     name: 'gallery',
-    title: 'Gallerie',
+    title: 'galerie',
     type: 'document',
     fields: [
         {
