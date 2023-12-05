@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className='app__navbar-links'>
 
             <Link to='/'><li className='app__flex p-text'>Accueil</li></Link>
-            <Link to='gallerie'><li className='app__flex p-text'>Gallerie</li></Link>
+            <Link to='galerie'><li className='app__flex p-text'>galerie</li></Link>
             <Link to='tarifs'><li className='app__flex p-text'>Tarifs</li></Link>
               
           </ul>
@@ -38,7 +38,7 @@ const Navbar = () => {
               <ul className='app__navbar-toggle'>
 
                 <Link to='/'><li onClick={() => setToggle(false)}>Accueil</li></Link>
-                <Link to='gallerie'><li onClick={() => setToggle(false)}>Gallerie</li></Link>
+                <Link to='galerie'><li onClick={() => setToggle(false)}>galerie</li></Link>
                 <Link to='tarifs'><li onClick={() => setToggle(false)}>Tarifs</li></Link>
               </ul>
             </motion.div>
